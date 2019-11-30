@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register with Glam</title>
+<style media="screen">
+
+body{
+margin:0;
+padding:0;
+background:url("login1.jpg");
+background-size:cover;
+background-position: cover;
+font-family:'Raleway',sans-serif;
+}
+html{
+height: 100%;
+}
+
+.title{
+text-align: center;
+padding:50px 0 20px;
+}
+
+.title h1{
+margin:0;
+padding:0;
+font-size: 50px;
+color:#081624;
+font-family: serif;
+/*font-weight: 800px;*/
+}
+
+.container
+{
+width:50%;
+height:400px;
+/*background:#fff;*/
+margin: 0 auto;
+border: 1px solid #081624;
+}
+
+.container .left{
+float:left;
+width:50%;
+height:400px;
+background: url("register.jpg");
+background-size:cover;
+background-position: center;
+box-sizing:border-box;
+
+}
+.container .left p{
+font-family: serif;
+font-size: 35px;
+font-weight:bold;
+text-align: center;
+color:black;
+padding-top: 280px;
+}
+
+.container .right{
+float:right;
+width:50%;
+height:400px;
+box-sizing:border-box;
+background-color: white;
+}
+.formBox{
+width:100%;
+padding:40px 40px;
+box-sizing:border-box;
+height:400px;
+/*background:#fff;*/
+}
+.formBox p{
+margin:0;
+padding:0;
+font-weight:bold;
+color:#081624;
+}
+.formBox input{
+width:100%;
+margin-bottom: 20px;
+}
+.formBox input[type="text"],
+.formBox input[type="password"],
+.formBox input[type="Email id"],
+.formBox input[type="tel"]
+{
+border:none;
+border-bottom: 2px solid black;
+outline:none;
+height:30px;
+
+}
+/* .formBox input[type="submit"] */
+#customer_account
+{
+border:none;
+outline:none;
+height:40px;
+width:50%s;
+color:#fff;
+background: #262626;
+cursor:pointer;
+}
+
+button {
+  border:none;
+  outline:none;
+  height:40px;
+  color:#fff;
+  background: #262626;
+  cursor:pointer;
+  width: 100%;
+}
+
+</style>
+
+<script src="jquery.min.js" charset="utf-8"></script>
+
+  <script src="customer_account.js" charset="utf-8"></script>
+
+</head>
+<body>
+<div style="margin-top:50px;">
+<div class="title"><h1 style="color:white;">Join with Glam</h1></div>
+<div class="container">
+<div class="left"></div>
+<div class="right">
+<div class="formBox">
+<!-- <form action="customer_account.php" method="Post" > -->
+<p>Username</p>
+<input type="text" name="" placeholder="Your Name" id="username">
+<p>Password</p>
+<input type="Password" name="" placeholder="Password" id="password">
+<p>Email id</p>
+<input type="Email id" name="" placeholder="Email id" id="email_id">
+<p>Mobile Number</p>
+<input type="tel" name="" placeholder="Mobile No." id="mobile_no">
+
+<button type="button" name="button" id="customer_account"onclick="register();">Register</button>
+<!-- </form> -->
+</div>
+</div>
+</div>
+<p align="middle" style="color:white;">Already registered?&nbsp<b><i><a href="login.html" style="color:white;">Login Here</a></p></i></b>
+
+</body>
+</html>

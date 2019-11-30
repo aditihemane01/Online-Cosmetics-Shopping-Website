@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=scuffed-steel">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+.w3-lobster {
+  font-family: "Lobster", Safari;
+}
+
+.hero-image {
+  background-image: url("lips1.jpg");
+  background-color: #000000;
+  height: 313px;
+  background-position: right;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: middle;
+}
+
+div.polaroid {
+  width: 350px;
+  height: 350px;
+  margin-top:15px;
+  margin-left:150px;
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#navbar {
+  background-color: #000000  ;
+  top: 0;
+  width: 100%;
+  <!--display: block;-->
+  transition: top 0.3s;
+  padding-top: : 10px;
+  margin-bottom: -50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button a{
+  margin-top:-20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+
+.button5 {
+  background-color: black;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   height:400px;
+   text-align: left;
+   background-image: url("stars5.jpg");
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row h6{
+  color: grey;
+}
+
+.column h2 {
+  font-family: serif;
+  color: #081624;
+  font-size: 40px;
+  /* margin-bottom: 50px; */
+  font-weight: 400;
+  /* padding-top: 33px; */
+  padding-left: 100px;
+  padding-top: 30px;
+}
+.column img{
+  margin-bottom: 50px;
+  padding-top: 70px;
+  padding-left: 80px;
+}
+.column p{
+  margin-bottom: 50px;
+}
+h4 {
+  font-size: 21px;
+  color: #60656b;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 100px;
+}
+.container .column {
+  float: left;
+  width: 33.33%;
+}
+/* Clear floats after the columns */
+.container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: italic;
+  font-family: serif;
+  padding-bottom: 40px;
+}
+.image img {
+  height: 600px;
+}
+#middle .column {
+  float: left;
+  width: 33.33%;
+}
+/* Clear floats after the columns */
+#middle .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#middle @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#middle {
+  text-align: justify;
+  font-family: serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1{
+  font-size:400%;
+  font-family: 'Suranna', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.fa {
+  /*background-color: white;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-pinterest {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-google {
+  background: black;
+  color: white;
+}
+
+ul.a {list-style-type: none;}
+
+.vl {
+  border-left: 3px solid black;
+  height: 200px;
+}
+
+
+/*======================COPY THISSSSSSSSSSSSSSSSSSSSSSSSSSS====================================================*/
+/*I HAVE GIVEN ZOOM AS id*/
+#zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  transition: 1s;
+}
+@media screen and (max-width: 800px) {
+   #aboutandbrands h1{
+    font-size: 7vw;
+  }
+   #aboutandbrands h4{
+     font-size:3vw;
+   }
+   #zoom{
+     width:200px;
+     height:200px;
+     margin-left:-100px;
+   }
+   .w3-lobster font-effect-scuffed-steel{
+     width:100%;
+
+   }
+   .hero-image{
+     width:100%;
+   }
+}
+/*============================TILL THIS==========================================================================*/
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <div class = "row">
+      <div class = "column">
+        <img src="glam.jpg" style="width:155px; height:140px; margin-left:-60px; margin-top:-60px;">
+      </div>
+      <div class = "column">
+        <a href="home.html">HOME</a>
+        <a href="brands.html">BRANDS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+
+
+<button class="button button5"><a href="login.html">SIGN-IN</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image">
+  <div class="w3-container w3-lobster font-effect-scuffed-steel">
+  <div>
+  <br>
+    <h3 align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBRANDS</h3>
+  </div>
+  </div>
+</div><br>
+
+<div id="aboutandbrands">
+<h1 align="middle">ABOUT GLAM</h1>
+<div class="row">
+  <div class="column" style="max-width:100%;">
+    <h4>GLAM is a cosmetics brand launched in September 2017. The brand is popular for its broad inclusivity across skin tones and gender, especially its Pro Filt'R foundation.<br>GLAM was named to Time magazine's list of the 25 best inventions of 2017,alongside NASA's Martian spacecraft InSight,Apple's iPhone X,Nike's Pro Hijab,and the Tesla Model 3.<br>
+        GLAM also won the WWD Beauty Inc. award in 2017 for launch of the year in the prestige sector.</h4>
+  </div>
+  <div class="column">
+    <div class="polaroid">
+    <img src="glam.jpg"  id="zoom" style="width:280px; height:280px;">
+    </div>
+  </div>
+</div><br><br>
+
+
+<h1 align="middle">BRANDS WE SUPPORT</h1>
+<div class="container">
+ <div class="row" style="margin-left:50px;">
+
+   <div class="column">
+     <img src="adin.jpg" id="zoom" width="350" height="350">
+   </div>
+
+   <div class="column">
+     <img src="adil.jpg" id="zoom" width="350" height="350">
+   </div>
+
+   <div class="column">
+     <img src="adif.jpg"id="zoom"  width="350" height="350">
+   </div>
+
+ </div>
+
+ <div class="row" style="margin-left:50px;">
+   <div class="column">
+     <img src="adis.jpg" id="zoom"  width="350" height="350">
+   </div>
+
+   <div class="column">
+     <img src="adim.jpg" id="zoom"  width="350" height="350">
+   </div>
+
+   <div class="column">
+     <img src="adiv (2).jpg" id="zoom"  width="350" height="350">
+   </div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+  <div class="row" style="height:100px; text-align:center;">
+    <a href="#" class="fa fa-facebook" ></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-google"></a>
+  </div>
+  <div class="row">
+    <div class="column" >
+      <div class="container" style="width:170px;margin-left:80px;">
+          <img src="glam.jpg" style="width:280px; height:260px; margin-left:-100px; margin-top:-50px;">
+          <div class="column" >
+            <div class="container" style="width:170px;margin-left:320px; margin-top:-270px;">
+            <i><p style="margin-bottom:10px;"><b>ABOUT US</b></p></i>
+            <hr>
+      <i><p>GLAM is a cosmetics brand launched in September 2017.The brand is popular for its broad inclusivity across skin tones, especially its Pro Filt'R foundation.</p></i>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column" >
+<div class="vl"></div>
+</div>
+    <div  class="column" style="width:220px;margin-right: 160px; margin-left: -3px; margin-top:-210px;">
+      <ul class="a">
+      <b><i><li>QUICK LINKS<li></b>
+        <hr>
+        <b><li><a href="home.html">Home</a><li>
+          <li><a href="brand.html">Brands</a></li>
+          <li><a href="shop.html">Shop</a><li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact-Us</a></li>
+          <li><a href="register.html">Register</a><li>
+          <li><a href="login.html">Sign-in</a></li></i></b>
+          </ul>
+    </div>
+    <div class="column" style=" margin-top: -210px; width:200px;">
+    <i>  <p style="margin-bottom:10px;"><b><i>CONTACT US</i></b></p>
+    <hr>
+      <p>Address: New York, 61 Street, Downtown Alley.<br><br>
+      Phone: + 1235 2355 98<br><br>
+      Email: info@glam.com<br><br>
+</div>
+    </div>
+</div>
+
+
+</html>

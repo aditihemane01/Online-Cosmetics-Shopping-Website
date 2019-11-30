@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=scuffed-steel">
+  <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.w3-lobster {
+  font-family: "Lobster", Safari;
+}
+
+.hero-image {
+  background-image: url("5.jpg");
+  background-color: #000000;
+  height: 320px;
+  background-position: fill;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: middle;
+}
+
+h2{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration:2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}*/
+
+body {
+  background-color: #ffffff;
+}
+#producticon .checked {
+  color: black;
+  font-size: 18px;
+  margin-left: -10px;
+}
+#producticon .unchecked {
+  color: grey;
+  font-size: 18px;
+  margin-left: -10px;
+}
+
+/* .wrapper {
+  height: 400px;
+  width: 600px;
+  margin: 50px auto;
+  border-radius: auto;
+  VIA CSS MATIC https://goo.gl/cIbnS
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+} */
+
+.product-img {
+  float: left;
+  height: 400px;
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+  padding-left: 40px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 400px;
+  width: 300px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -1px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 30px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 45px;
+  width: 145px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+  outline: none;
+}
+
+div.d {
+   -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline;
+}
+
+.product-price-btn button:hover {
+  background-color: grey;
+}
+
+h1{
+  font-size:600%;
+  font-family: 'Suranna', serif;
+}
+
+#store_in_focus p{
+  font-size: 80px;
+  font-family: 'Suranna', serif;*/
+
+}
+
+.container{
+  float: 50%;
+}
+
+/* .row10 {
+  display: flex;
+}
+
+.left10 {
+  flex: 250%;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.left10 h2 {
+  padding-left: 8px;
+  padding-top:none;
+  font-size: 15px;
+}
+
+.right10 {
+  flex: 85%;
+  padding: 15px;
+}
+
+
+#mySearch {
+  width: 10%;
+  font-size: 12px;
+  padding: 6px;
+  padding-top: none;
+  border:1px solid grey;
+  border-bottom: 2px solid black;
+}
+
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+  width: 15%;
+}
+
+
+.container10 {
+  position: relative;
+  text-align:center;
+  color: black;
+  font-weight: bold;
+}
+
+/* .centered10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.column10 {
+  float: left;
+  width: 25%;
+}
+
+
+.row10:after {
+  content: "";
+  display: table;
+  clear: both;
+}  */
+
+.row10 {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left10 {
+  flex: 250%;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.left10 h2 {
+  padding-left: 8px;
+  padding-top:none;
+  font-size: 15px;
+}
+/* Right column (page content) */
+.right10 {
+  flex: 85%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 15%;
+  font-size: 12px;
+  padding: 6px;
+  padding-top: none;
+  border:1px solid grey;
+  border-bottom: 2px solid black;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+  width: 15%;
+}
+
+/* Container holding the image and the text */
+.container10 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+.column10 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row10:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#navbar {
+  background-color: #000000  ;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  <!--display: block;-->
+  transition: top 0.3s;
+  padding-top: : 10px;
+  margin-bottom: -50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button a{
+  margin-top:-20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+
+.button5 {
+  background-color: black;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   height:400px;
+   text-align: left;
+   background-image: url("stars5.jpg");
+}
+
+.container1 {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.fa {
+  /*background-color: white;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-pinterest {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-google {
+  background: black;
+  color: white;
+}
+
+ul.a {list-style-type: none;}
+
+.vl {
+  border-left: 3px solid black;
+  height: 200px;
+}
+
+.column1{
+  float: left;
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <div class = "row">
+      <div class = "column">
+        <img src="glam.jpg" style="width:80px; height:75px; margin-left:5px; margin-top:5px;">
+</div>
+      <div class = "column" style="margin-top:-80px; margin-left:850px;">
+        <a href="home.html">HOME</a>
+        <a href="brand.html">BRANDS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+
+
+<button class="button button5"><a href="login.html">SIGN-IN</a></button>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <div class="hero-image">
+  <div class="w3-container w3-lobster font-effect-scuffed-steel">
+  <div>
+  <br><br><br>
+    <h2 align="right">SHOP&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+
+  </div>
+  </div>
+  </div>
+
+<br>
+<br>
+
+<div class="row10">
+<div class="left10">
+  <h2 style=" font-family: 'Merriweather', serif;">CATEGORIES</h2>
+  <i class="fa fa-search" style="margin-left: -20px;"></i>
+ <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for categories" title="Type in a category">
+  <ul id="myMenu">
+    <li><a href="lipstick.html">Lipsticks</a></li>
+    <li><a href="foundation.html">Foundations</a></li>
+    <li><a href="mascaraliner.html">Mascara and Liner</a></li>
+    <li><a href="bodylotion.html">Body Lotions</a></li>
+  </ul>
+</div>
+
+<div class="row10" style="margin-top:30px;margin-left:-1800px;">
+  <div class="column10">
+    <div class="container10">
+      <img src="lipstick.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right">Lipsticks</div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="foundation.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right">Foundations</div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="mascaraliner.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right">Mascara And Liner</div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="bodylotion.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right">Body Lotions</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<!-- <div class="row10">
+<div class="left10">
+  <h2 style=" font-family: 'Merriweather', serif;">CATEGORIES</h2>
+  <i class="fa fa-search"></i>
+ <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for categories" title="Type in a category">
+  <ul id="myMenu">
+    <li><a href="kurtis.html">Lipsticks</a></li>
+    <li><a href="dress material.html">Foundations</a></li>
+    <li><a href="sarees.html">Mascara and Liner</a></li>
+    <li><a href="dupattas.html">Body Lotions</a></li>
+  </ul>
+</div>
+
+<div class="row10" style="margin-top:30px;margin-left:-2000px;">
+  <div class="column10">
+    <div class="container10">
+      <img src="lipstick.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right" style="font-size:20px;"><a href="#">Lipsticks</a></div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="foundation.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right" style="font-size:20px;"><a href="#">Foundations</a></div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="mascaraliner.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right" style="font-size:20px;"><a href="#">Mascara and Liner</a></div>
+    </div>
+  </div>
+  <div class="column10">
+    <div class="container10">
+      <img src="bodylotion.jpg" alt="Snow" style="width:250px;height:350px;padding:20px;border: 2px solid grey;box-shadow: 10px 10px 5px #aaaaaa;">
+      <div class="bottom-right" style="font-size:20px;"><a href="#">Body Lotions</a></div>
+    </div>
+  </div>
+</div>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script> -->
+
+
+<h1 align='middle' style="padding-top:500px;margin-left:-1300px;text-align:inline;margin-right:100px;font-size:80px;">EXCITING OFFERS</h1>
+
+  <div class="slideshow-container" style="padding-top:450px;width:100%;align:middle;margin-right:70px;">
+
+
+
+  <div class="mySlides fade">
+    <img src="1e.jpeg" style="width:800px;height:300px;margin-right:50px;">
+
+  </div>
+
+  <div class="mySlides fade">
+    <img src="SEPHORA2.jpg" style="width:800px;height:300px;margin-right:50px;">
+
+
+
+  </div>
+
+
+
+</div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <h1 align="middle">OUR PRODUCTS</h1>
+
+<div class = "row" style="margin-left:60px;">
+      <div class = "column">
+      <div class="product-img">
+        <img src="s.jpg" height="400" width="250">
+      </div>
+      <div class="product-info" id="producticon">
+        <div class="product-text">
+          <h1>Chillowt</h1>
+          <h2>by GLAM</h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star unchecked"></span>
+        <p>&nbspCreate ombre lips or use as <br>&nbspchromatic eye shadow/lipstick <br>&nbspto warm any icy sensation.</p>
+          </div>
+        <div class="product-price-btn">
+          <p><span>₹2,166</span></p>
+          <button type="button">buy now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        <div class = "column" style="width=600px">
+        <div class="product-img">
+          <img src="30.jpeg" height="400" width="250">
+        </div>
+        <div class="product-info" id="producticon">
+          <div class="product-text">
+            <h1>Moiselle Plush</h1>
+            <h2>by GLAM</h2>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star unchecked"></span>
+          <p>&nbspHigh-octane pigment meets <br>&nbspunexpectedly universal shades to complement all moods.</p>
+            </div>
+          <div class="product-price-btn">
+            <p><span>₹1,009</span></p>
+            <button type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+      <!-- <div class="row" style="margin-left:-100px">
+        <div class="column">
+          <div class="product-img"  style="margin-right:70px;">
+            <img src="m.jpg" height="400" width="250">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1>VITALUMIÈRE AQUA ULTRA</h1>
+              <h2>by GLAM</h2>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+            <p>&nbspRadiant and luminous.</p>
+              </div>
+            <div class="product-price-btn">
+              <p><span>₹1,599</span></p>
+              <button type="button">buy now</button>
+            </div>
+          </div>
+        </div>
+
+    <div class="column" style="width=600px">
+      <div class="product-img">
+        <img src="n.jpg" height="400" width="250">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Glossbomb</h1>
+          <h2>by GLAM</h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star unchecked"></span>
+        <p>&nbspStay glossy and flossy this <br>&nbspholiday szn with #GLOSSBOMB,<br>&nbspthe perfect pink for all skin tones.</p>
+          </div>
+        <div class="product-price-btn">
+          <p><span>₹1,948</span></p>
+          <button type="button">buy now</button>
+        </div>
+      </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+  <div id=store_in_focus style="margin-right:300px;"><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSTORE IN FOCUS</p></div>
+
+
+
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+  }
+  </script>
+
+
+    <div class="row" style="margin-left:60px;">
+      <div class="column" style="width=600px">
+      <div class="product-img">
+        <img src="29.jpeg" height="400" width="250">
+      </div>
+      <div class="product-info">
+        <div class="product-text" id="producticon">
+          <h1>Explicit Black</h1>
+          <h2>by NARS</h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star unchecked"></span>
+            <span class="fa fa-star unchecked"></span>
+        <p>&nbspNars Climax Mascara Explicit Black <br>&nbsp#7008 Full Size.<br>&nbsp21 Ounce Dramatic Volumizing</p>
+          </div>
+        <div class="product-price-btn">
+          <p><span>₹2,548</span></p>
+          <button type="button">buy now</button>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="column" style="width=600px">
+          <div class="product-img">
+            <img src="31.jpeg" height="400" width="250">
+          </div>
+          <div class="product-info">
+            <div class="product-text" id="producticon">
+              <h1>L'Absolu Rouge Drama</h1>
+              <h2>by Lancôme</h2>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star unchecked"></span>
+              <p>&nbspColor:88 Rose Lancôme</p>
+            </div>
+            <div class="product-price-btn">
+              <p><span>₹1,580</span></p>
+              <button type="button">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+                <!-- <div class="row">
+                  <div class="column" style="width=600px">
+                  <div class="product-img">
+                    <img src="i.jpg" height="400" width="250">
+                  </div>
+                  <div class="product-info">
+                    <div class="product-text">
+                      <h1>Rosy Mauve</h1>
+                      <h2>by GLAM</h2>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      <p>&nbspStunna’s weightless, comfortable,<BR>&nbspsoft-matte formula stays kissably <br>&nbspsmooth all day.</p>
+                    </div>
+                    <div class="product-price-btn">
+                      <p><span>₹1,790</span></p>
+                      <button type="button">buy now</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column" style="width=600px">
+                <div class="product-img">
+                  <img src="33.jpg" height="400" width="250">
+                </div>
+                <div class="product-info">
+                  <div class="product-text">
+                    <h1>Blush Super</h1>
+                    <h2>by NARS</h2>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star unchecked"></span>
+                      <span class="fa fa-star unchecked"></span>
+                    <p>&nbspIconic shades for cheeks, delivering &nbsphealthy-looking color that <br>&nbspimmediately enlivens complexion.</p>
+                  </div>
+                  <div class="product-price-btn">
+                    <p><span>₹1,130</span></p>
+                    <button type="button">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="footer">
+              <div class="row" style="height:100px; margin-top:-20px; text-align:center;">
+                <a href="#" class="fa fa-facebook" ></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-google"></a>
+              </div>
+              <div class="row">
+                <div class="column1" >
+                  <div class="container1" style="width:170px;margin-left:80px;">
+                      <img src="glam.jpg" style="width:180px; height:170px; margin-left:-100px; margin-top:20px;">
+                      <div class="column1" >
+                        <div class="container1" style="width:170px;margin-left:320px; margin-top:-20px;">
+                          <i><p style="margin-bottom:10px;"><b>ABOUT US</b></p></i>
+                          <hr>
+                  <i><p>GLAM is a cosmetics brand launched in September 2017.<br>The brand is popular for its broad inclusivity across skin tones and gender, especially its Pro Filt'R foundation.</p></i>
+                </div>
+              </div>
+            </div>
+            </div>
+              </div>
+              <div class="column1" >
+              <div class="vl"></div>
+              </div>
+                      <div  class="column1" style="width:220px;margin-right: 150px; margin-left: -3px; margin-top:-210px;">
+                        <ul class="a">
+                        <b><i><li>QUICK LINKS<li></b>
+                          <hr>
+                          <b><li><a href="home.html">Home</a><li>
+                            <li><a href="brand.html">Brands</a></li>
+                            <li><a href="shop.html">Shop</a><li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact-Us</a></li>
+                            <li><a href="register.html">Register</a><li>
+                            <li><a href="login.html">Sign-in</a></li></i></b>
+                  </ul>
+                </div>
+                <div class="column1" style=" margin-top:-210px; width:200px;">
+                <i> <i>  <p style="margin-bottom:10px;"><b><i>CONTACT US</i></b></p>
+                <hr>
+                  <p>Address: New York, 61 Street, Downtown Alley.<br><br>
+                  Phone: + 1235 2355 98<br><br>
+                  Email: info@glam.com<br><br>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+/*navbazr*/
+#navbar {
+  background-color: #000000  ;
+  top: 0;
+  width: 100%;
+  <!--display: block;-->
+  transition: top 0.3s;
+  padding-top: : 10px;
+  margin-bottom: -50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  padding-top: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button a{
+  margin-top:-20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+.button5 {
+  background-color: black;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/*footer*/
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   height:350px;
+   text-align: center;
+   background-image: url("stars5.jpg");
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.fa {
+  /*background-color: white;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-pinterest {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-google {
+  background: black;
+  color: white;
+}

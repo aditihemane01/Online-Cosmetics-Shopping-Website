@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=scuffed-steel">
+<style>
+
+.w3-lobster {
+  font-family: "Lobster", Safari;
+}
+
+.hero-image {
+  background-image: url("co.jpg");
+  background-color: #000000;
+  height: 320px;
+  background-position: fill;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: middle;
+}
+
+h2{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row h6{
+  color: grey;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  font-size: 100px;
+  font-style: italic;
+  font-family: serif;
+}
+
+.image img {
+  height: 600px;
+}
+.column img{
+  margin-bottom: 50px;
+  padding-top: 150px;
+  padding-left: 100px;
+}
+#form {
+  padding-top: 100px;
+}
+.column .form-group {
+  padding: 15px;
+  width: 80%;
+  height: 600px;
+  background-image:url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.column .form-control {
+   padding: 15px;
+   width: 80%;
+   border: 1px solid grey;
+   border-radius: 4px;
+   font-size: 15px;
+   opacity: 0.8;
+}
+/*
+::placeholder {
+  text-align: center;
+}
+#Message::placeholder {
+  text-align: left;
+} */
+/* input[type=submit] {
+  padding: 20px;
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+  border-radius: 6px;
+  opacity: 0.9;
+} */
+
+button {
+  padding: 20px;
+  text-align: center;
+  font-family: serif;
+  font-size: 20px;
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+.column p {
+   border-radius: 4px;
+   font-size: 20px;
+   font-family: serif;
+   width: 90%;
+   border: 1px solid black;
+   background-color: white;
+   text-align: center;
+   background-repeat: no-repeat;
+   text-align: justify;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+#navbar {
+  background-color: #000000  ;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  <!--display: block;-->
+  transition: top 0.3s;
+  padding-top: : 10px;
+  margin-bottom: -50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin-top: -0.1px;
+
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button a{
+  margin-top:-20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+
+.button5 {
+  background-color: black;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   height:420px;
+   text-align: left;
+   background-image: url("stars5.jpg");
+}
+
+.container1 {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.fa {
+  /*background-color: white;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-pinterest {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-google {
+  background: black;
+  color: white;
+}
+
+ul.a {list-style-type: none;}
+
+.vl {
+  border-left: 3px solid black;
+  height: 200px;
+}
+
+.column1{
+  float: left;
+  width: 50%;
+}
+
+</style>
+
+<script src="jquery.min.js" charset="utf-8"></script>
+
+<script src="contact.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+  <div id="navbar">
+    <div class = "row">
+      <div class = "column">
+        <img src="glam.jpg" style="width:180px; height:220px; margin-left:-95px; margin-top:-145px;">
+      </div>
+      <div class = "column" style="margin-left:700px; margin-top:-140px; margin-left:850px;">
+        <a href="home.html">HOME</a>
+        <a href="brand.html">BRANDS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+
+
+<button class="button button5"><a href="signin.html"><b>SIGN-IN</b></a></button>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <div class="hero-image">
+  <div class="w3-container w3-lobster font-effect-scuffed-steel">
+  <div>
+  <br><br>
+    <h2 align="right">CONTACT US&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="margin-left:20 px;"><br><br><br><br><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9575177319284!2d72.8685476142119!3d19.021593558624968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf394b345bdd%3A0x8d44ea4f85af3ceb!2sVidyalankar%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1569906582963!5m2!1sen!2sin" width="600" height="580" frameborder="0" style="border:0; margin-left:40px;" allowfullscreen=""></iframe>
+    </div>
+
+    <div class="column" style="margin-top:100px;">
+      <!-- <form action="#" id="form"> -->
+        <div class="form-group">
+          <div class="row" style="padding:10px;">
+            <input type="text" class="form-control" placeholder="Your Name" id="username">
+          </div>
+          <div class="row" style="padding:10px;">
+            <input type="text" class="form-control" placeholder="Your Email" id="email_id">
+          </div>
+          <div class="row" style="padding:10px;">
+            <input type="text" class="form-control" placeholder="Subject" id="subject">
+          </div>
+          <div class="row" style="padding:10px;">
+            <textarea name="" cols="30" rows="7" class="form-control" placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="row" style="padding:10px;">
+            <button type="button" name="button" id="contact"onclick="contact();">Send Message</button>
+          </div>
+        </div>
+      <!-- </form> -->
+    </div>
+  </div>
+
+  <div class="row" style="padding:30px;" >
+      <div class="column">
+        <div class="row">
+          <div class="column">
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAddress:New York</p>
+          </div>
+          <div class="column">
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPhone: + 1235 2355 98</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="row">
+          <div class="column">
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEmail: info@glam.com</p>
+          </div>
+          <div class="column">
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWebsite: glam.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br><br>
+    <div class="footer">
+      <div class="row" style="height:100px; margin-top:-20px; text-align:center;">
+        <a href="#" class="fa fa-facebook" ></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+      <div class="row">
+        <div class="column1" >
+          <div class="container1" style="width:170px;margin-left:80px;">
+              <img src="glam.jpg" style="width:180px; height:170px; margin-left:-100px; margin-top:20px;">
+              <div class="column1" >
+                <div class="container1" style="width:170px;margin-left:320px; margin-top:-40px;">
+                  <i><p style="margin-bottom:10px;"><b>ABOUT US</b></p></i>
+                  <hr>
+          <i><p>GLAM is a cosmetics brand launched in September 2017.<br>The brand is popular for its broad inclusivity across skin tones and gender, especially its Pro Filt'R foundation.</p></i>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+      <div class="column1" >
+      <div class="vl"></div>
+      </div>
+              <div  class="column1" style="width:220px;margin-right: 150px; margin-left: -3px; margin-top:-250px;">
+                <ul class="a">
+                <b><i><li>QUICK LINKS<li></b>
+                  <hr>
+
+          <b><i><li><a href="home.html">HOME</a><li>
+          <li><a href="brand.html">BRANDS</a></li>
+          <li><a href="shop.html">SHOP</a><li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="register.html">REGISTER</a><li>
+          <li><a href="login.html">SIGN-IN</a></li></i></b>
+        </ul>
+        </div>
+        <div class="column1" style=" margin-top:-250px; width:200px;">
+        <i> <i>  <p style="margin-bottom:10px;"><b><i>CONTACT US</i></b></p>
+        <hr>
+          <p>Address: New York, 61 Street, Downtown Alley.<br><br>
+          Phone: + 1235 2355 98<br><br>
+          Email: info@glam.com<br><br>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+</html>

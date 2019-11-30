@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=scuffed-steel">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.w3-lobster {
+  font-family: "Lobster", Safari;
+}
+
+.hero-image {
+  background-image: url("trends1.jpg");
+  background-color: #000000;
+  height: 313px;
+  background-position: right;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  position: middle;
+}
+
+#navbar {
+  background-color: #000000  ;
+  top: 0;
+  width: 100%;
+  <!--display: block;-->
+  transition: top 0.3s;
+  padding-top: : 10px;
+  margin-bottom: -50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  padding-top: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button a{
+  margin-top:-20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+
+.button5 {
+  background-color: black;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   height:380px;
+   text-align: left;
+   background-image: url("stars5.jpg");
+ }
+
+.container1 {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.fa {
+  /*background-color: white;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-pinterest {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+.fa-google {
+  background: black;
+  color: white;
+}
+ul.a {list-style-type: none;}
+
+.vl {
+  border-left: 3px solid black;
+  height: 200px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 600px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container img {
+  vertical-align: middle;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5px;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+
+.column {
+
+  float: 50%;
+  padding: 20px;
+}
+
+.column1{
+  float: left;
+  width: 50%;
+}
+
+
+
+h1{
+  font-size: 600%;
+  font-family: "Lobster", Safari;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <div class = "row">
+      <div class = "column">
+        <img src="glam.jpg" style="width:75px; height:70px; margin-left:-0.5px; margin-top:-10px;">
+      </div>
+      <div class = "column" style="margin-left:700px; margin-top:-120px; margin-bottom:40px;">
+        <a href="home.html">HOME</a>
+        <a href="brand.html">BRANDS</a>
+        <a href="shop.html">SHOP</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+
+
+
+<button class="button button5"><a href="login.html">SIGN-IN</a></button>
+      </div>
+    </div>
+  </div>
+
+<div class="hero-image">
+<div class="w3-container w3-lobster font-effect-scuffed-steel">
+<div>
+<br><br><br>
+  <h1 align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBLOG</h1>
+</div>
+</div>
+</div>
+<br><br>
+
+<div class="row">
+  <div class="column" style="width:50%">
+  <div class="flip-card" style="float:left;margin-left:90px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="1.jpg" alt="Avatar" style="width:400px;height:600px;">
+      </div>
+      <div class="flip-card-back">
+        <h6><br>Activist Louisa Northcote started her #freethepimple campaign on Instagram, sharing selfies of her own unfiltered spots and encouraging followers to do the same. A spot-positive movement was born, leading to the creation of an entire @freethepimple account, and chiming with the broader self-acceptance movement taking hold of social media at large.<br><br>
+                  “I started this whole conversation around #freethepimple to find other people like myself, to compare notes and see what they have tried. And along the way I found myself,”. “I punished myself for having acne and thought I was ugly and worthless. Finding others like me, through using social media and being part of the acne community, has changed my life."</h6>
+      </div>
+    </div>
+    <div class="container">
+    <div class="content">
+      <h3 align="middle">Is the beauty world finally embracing acne?</h3>
+      <hr>
+      <h5 align="middle">by LISA NIVEN PHILIPS
+      <br>September 12, 2019</h5>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="column" style="width: 50%;margin-left:400px; margin-top:-40px;">
+  <div class="flip-card" style="float:left;margin-left:50px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="2.jpg" alt="Avatar" style="width:400px;height:600px;">
+      </div>
+      <div class="flip-card-back">
+        <h4>Forest Essentials Ayurvedic Herb Enriched Head Massage Oil Japapatti</h4>
+        <h6>Lightweight, non-greasy and quickly absorbed, this massage oil is a great pick for super chemically processed or parched strands. Coconut oil is blended with hibiscus and japapatti leaf in this one to thicken hair and restore shine. Regular use will induce a healthy sheen and bounce to the tresses.</h6>
+        <h4>The Body Shop Coconut Oil Hair Shine</h4>
+        <h6>This solid balm emulsifies on contact with the heat of your hand, turning into a creamy serum that flattens frizz and conditions the hair. You can tame flyaways and set styles with a tiny amount.</h6>
+        </div>
+    </div>
+    <div class="container">
+    <div class="content">
+      <h3 align="middle">8 skincare and haircare products that give you all the benefits of coconut oil</h3>
+      <hr>
+      <h5 align="middle">by NAAILA KHAN
+       <br>September 29, 2019</h5>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="column" style="width: 50%;margin-left:800px;margin-top:-80px;">
+  <div class="flip-card" style="float:left;margin-left:50px;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="3.jpg" alt="Avatar" style="width:400px;height:600px;">
+      </div>
+      <div class="flip-card-back">
+        <h4>The trend: Elegant punk</h4>
+  <h6>Where we’ve seen it: <br>Rag & Bone, Vera Wang, Proenza Schouler, Tom Ford, 3.1 Phillip Lim, Helmut Lang, R-13
+
+  <br><br>What you need to know:<br>This aesthetic is a fusion of dark magic and powerful women.“I think it’s so fun that the eighties are back because I was there!So they’re discovering this era of powerful women and really fun, bold looks for the very first time,” Guido Palau told Vogue at Proenza Schouler.</h4>
+
+  <font color="	#8B0000"><b>Style note: Your eyeliner is everything for this look. Dark kohl liner rimmed and smeared on the waterline creates the ultimate punk mood.</b></font></h6>
+      </div>
+    </div>
+    <div class="container">
+    <div class="content">
+      <h3 align="middle">5 beauty trends from NYFW S/S 2020 that everyone's talking about right now</h3>
+      <hr>
+      <h5 align="middle">by EMMA STERNER
+       <br>September 1, 2019</h5>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<iframe width="800px" height="400" align="leftcolumn" style="margin-left:360px; margin-top:80px;"
+src="https://www.youtube.com/embed/4ZP7ft-HZs0">
+</iframe><br><br>
+<p style="text-align:center;"><b>Model Hannah Ferguson's Guide to Her Magic Matte Red Lip | Beauty Secrets | Vogue</b></p>
+<p style="text-align:center;">The Texan-born runway star's guide to her velvety red lip—including her all-time, budge-proof favorite shade.</p>
+</div><br><br>
+
+<div class="footer">
+  <div class="row" style="height:100px; margin-top:-20px; text-align:center;">
+    <a href="#" class="fa fa-facebook" ></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-google"></a>
+  </div>
+  <div class="row">
+    <div class="column1" >
+      <div class="container1" style="width:170px;margin-left:80px;">
+          <img src="glam.jpg" style="width:180px; height:170px; margin-left:-100px; margin-top:20px;">
+          <div class="column1" >
+            <div class="container1" style="width:170px;margin-left:320px; margin-top:-20px;">
+              <i><p style="margin-bottom:10px;"><b>ABOUT US</b></p></i>
+              <hr>
+      <i><p>GLAM is a cosmetics brand launched in September 2017.<br>The brand is popular for its broad inclusivity across skin tones and gender, especially its Pro Filt'R foundation.</p></i>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="column1" >
+  <div class="vl"></div>
+  </div>
+          <div  class="column1" style="width:220px;margin-right: 150px; margin-left: -3px; margin-top:-210px;">
+            <ul class="a">
+            <b><i><li>QUICK LINKS<li></b>
+              <hr>
+              <b><li><a href="home.html">Home</a><li>
+                <li><a href="brand.html">Brands</a></li>
+                <li><a href="shop.html">Shop</a><li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+                <li><a href="register.html">Register</a><li>
+                <li><a href="login.html">Sign-in</a></li></i></b>
+      </ul>
+    </div>
+    <div class="column1" style=" margin-top:-210px; width:200px;">
+    <i> <i>  <p style="margin-bottom:10px;"><b><i>CONTACT US</i></b></p>
+    <hr>
+      <p>Address: New York, 61 Street, Downtown Alley.<br><br>
+      Phone: + 1235 2355 98<br><br>
+      Email: info@glam.com<br><br>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

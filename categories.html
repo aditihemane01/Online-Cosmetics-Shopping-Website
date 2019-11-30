@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Categories</title>
+
+<style>
+.row10 {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left10 {
+  flex: 250%;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.left10 h2 {
+  padding-left: 8px;
+  padding-top:none;
+  font-size: 15px;
+}
+/* Right column (page content) */
+.right10 {
+  flex: 85%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 15%;
+  font-size: 12px;
+  padding: 6px;
+  padding-top: none;
+  border:1px solid grey;
+  border-bottom: 2px solid black;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+  width: 15%;
+}
+
+/* Container holding the image and the text */
+.container10 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+.column10 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row10:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+  </head>
+  <body>
+  <div class="row10">
+  <div class="left10">
+    <h2 style=" font-family: 'Merriweather', serif;">CATEGORIES</h2>
+    <i class="fa fa-search"></i>
+   <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for categories" title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="kurtis.html">Lipsticks</a></li>
+      <li><a href="dress material.html">Foundations</a></li>
+      <li><a href="sarees.html">Mascara and Liner</a></li>
+      <li><a href="dupattas.html">Body Lotions</a></li>
+    </ul>
+  </div>
+
+  <div class="row10" style="margin-top:30px;margin-left:-1500px;">
+    <div class="column10">
+      <div class="container10">
+        <img src="31.jpeg" alt="Snow" style="width:70%">
+        <div class="bottom-right">Centered</div>
+      </div>
+    </div>
+    <div class="column10">
+      <div class="container10">
+        <img src="31.jpeg" alt="Snow" style="width:70%;">
+        <div class="bottom-right">Centered</div>
+      </div>
+    </div>
+    <div class="column10">
+      <div class="container10">
+        <img src="31.jpeg" alt="Snow" style="width:70%;">
+        <div class="bottom-right">Centered</div>
+      </div>
+    </div>
+    <div class="column10">
+      <div class="container10">
+        <img src="31.jpeg" alt="Snow" style="width:70%;">
+        <div class="bottom-right">Centered</div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
+
+  </body>
+</html>
